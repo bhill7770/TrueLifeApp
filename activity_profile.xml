@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ProfileActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="TrueLife User Profile"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp">
+
+
+            <ImageView
+                android:id="@+id/avatarIv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/design_default_color_on_primary"
+                android:padding="5dp"
+                android:src="@drawable/ic_pic_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Name"
+                    android:textColor="@color/design_default_color_on_primary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/bioTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bio"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/design_default_color_on_primary"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="11sp"
+                    />
+
+                <TextView
+                    android:id="@+id/ageTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/design_default_color_on_primary"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="11sp"
+                    />
+
+                <TextView
+                    android:id="@+id/hometownTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Hometown"
+                    android:textColor="@color/design_default_color_on_primary"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="11sp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+
+</ScrollView>
