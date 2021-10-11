@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/lifetree"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+    </com.google.android.gms.common.SignInButton>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/emailTIL" >
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EMAIL"
+        android:layout_centerVertical="true"
+        android:inputType="textEmailAddress" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/passwordTIL">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTIL"
+        android:layout_centerVertical="true"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        app:passwordToggleEnabled="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/phonenumberTIL">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+    <EditText
+        android:id="@+id/phonenumberEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordTIL"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:hint="PHONENUMBER (Optional)"
+        android:inputType="textPhonetic"
+        app:passwordToggleEnabled="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonenumberTIL"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_btn"
+        android:text="Login"
+        android:drawableLeft="@drawable/ic_baseline_key_24"   />
+
+    <TextView
+        android:id="@+id/nothave_accountTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Account? Please Register"
+        android:textAlignment="center"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
